@@ -12,8 +12,36 @@ SALUT JE SUIS H2LIOS
 
 <h3>Description</h3>
 
-<p>Le TD consiste à apprendre les bases de l'utilisation de git et github<br>
-dans le but d'avoir la meilleure utilisation de ces outils de versionning</p>
+<p>
+<span class="blink-hover">Le TD consiste à apprendre les bases de l'utilisation de git et github<br>
+dans le but d'avoir la meilleure utilisation de ces outils de versionning
+</span>
+</p>
 
 <img src="image0.jpg" alt="Tagda le chat" width="300">
 
+<style>
+    :root { --orig-color: #000; }
+
+    .blink-hover {
+      color: var(--orig-color);
+      transition: color 0.1s linear;
+    }
+
+    .blink-hover:hover {
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0%   { color: var(--orig-color); }
+      50%  { color: yellow; }
+      100% { color: var(--orig-color); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .blink-hover:hover {
+        animation: none;
+        color: yellow; 
+      }
+    }
+  </style>
