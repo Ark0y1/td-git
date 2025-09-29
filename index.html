@@ -1,14 +1,22 @@
 <title>Projet mise en commun de ressource</title>
-<h1>texte</h1>
+<h1>Présentaion de notre projet</h1>
 lolilol
 SALUT JE SUIS H2LIOS
+<style>
+  h1 {
+    color: red; 
+  }
+</style>
+
+
 
 <h3>Description</h3>
 
-<p>Le TD consiste à apprendre les bases de l'utilisation de git et github<br>
-dans le but d'avoir la meilleure utilisation de ces outils de versionning</p>
-
-
+<p>
+<span class="blink-hover">Le TD consiste à apprendre les bases de l'utilisation de git et github<br>
+dans le but d'avoir la meilleure utilisation de ces outils de versionning
+</span>
+</p>
 
 
 <div class="container">
@@ -174,4 +182,27 @@ dans le but d'avoir la meilleure utilisation de ces outils de versionning</p>
     .top { transform: translateY(-75px) rotateX(90deg); }
     .bottom { transform: translateY(75px) rotateX(-90deg); }
 }
-</style>
+    :root { --orig-color: #000; }
+
+    .blink-hover {
+      color: var(--orig-color);
+      transition: color 0.1s linear;
+    }
+
+    .blink-hover:hover {
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0%   { color: var(--orig-color); }
+      50%  { color: yellow; }
+      100% { color: var(--orig-color); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .blink-hover:hover {
+        animation: none;
+        color: yellow; 
+      }
+    }
+  </style>
