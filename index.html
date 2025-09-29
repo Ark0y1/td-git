@@ -1,5 +1,5 @@
 <title>Projet mise en commun de ressource</title>
-<h1>Présentaion de notre projet</h1>
+<h1 id="titre">Présentaion de notre projet</h1>
 lolilol
 SALUT JE SUIS H2LIOS
 <style>
@@ -7,12 +7,20 @@ SALUT JE SUIS H2LIOS
     color: red; 
     transition: color 0.3s ease; 
   }
-
-  h1:hover {
-    color: blue; 
-  }
 </style>
+<script>
+  const titre = document.getElementById("titre");
 
+  // quand la souris entre sur le titre
+  titre.addEventListener("mouseenter", () => {
+    titre.style.color = "blue";
+  });
+
+  // quand la souris sort du titre
+  titre.addEventListener("mouseleave", () => {
+    titre.style.color = "red";
+  });
+</script>
 
 
 <h3>Description</h3>
