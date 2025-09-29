@@ -47,6 +47,32 @@ dans le but d'avoir la meilleure utilisation de ces outils de versionning
         </div>
 </div>
 
+ <button onclick="changerFondAleatoire()">Changer le fond</button>
+
+  <script>
+    function couleurAleatoire() {
+      // Génère un code hexadécimal aléatoire (ex: #a3f9d1)
+      let lettres = "0123456789ABCDEF";
+      let couleur = "#";
+      for (let i = 0; i < 6; i++) {
+        couleur += lettres[Math.floor(Math.random() * 16)];
+      }
+      return couleur;
+    }
+
+    function changerFondAleatoire() {
+      document.body.style.backgroundColor = couleurAleatoire();
+    }
+    
+    (function(){
+	    const BTN = document.getElementById('boutonrouge');
+
+	    BTN.addEventListener('click', (e) => {
+		    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank', 'noopener');
+	    });
+    })();
+  </script>
+
 <style>
 * {
     margin: 0;
@@ -211,14 +237,3 @@ dans le but d'avoir la meilleure utilisation de ces outils de versionning
       }
     }
   </style>
-  
- 
- <script>
-(function(){
-	const BTN = document.getElementById('boutonrouge');
-
-	BTN.addEventListener('click', (e) => {
-		window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank', 'noopener');
-	});
-})();
-</script>
